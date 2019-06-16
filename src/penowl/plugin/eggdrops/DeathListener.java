@@ -32,7 +32,7 @@ public class DeathListener implements Listener {
 			
 			String mob = event.getEntity().getType().toString();
 			
-			if(plugin.getConfig().getString(event.getEntityType().toString()+".eggtype") != "") {
+			if(plugin.getConfig().getString(event.getEntityType().toString()+".eggtype") != "null") {
 				mob = plugin.getConfig().getString(event.getEntityType().toString()+".eggtype");
 			}
 			
