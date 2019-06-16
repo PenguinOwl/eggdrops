@@ -1,0 +1,17 @@
+main: penowl.plugin.eggdrops.Main
+name: EggDrops
+version: 1.0.0
+api-version: 1.14
+author: PenguinOwl
+description: A plugin that lets mobs drop eggs
+depends: []
+website: https://dev.bukkit.org/projects/eggdrops
+commands:
+  eggdrops:
+    description: The main MIGS command.
+    usage: /<command> reload
+    permission: eggdrops.reload
+    permission-message: You don't have <permission>
+permissions:
+  migs.reload:
+    description: Allows player to reload EggDrops config.
