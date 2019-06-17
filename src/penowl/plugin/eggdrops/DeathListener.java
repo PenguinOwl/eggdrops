@@ -22,7 +22,7 @@ public class DeathListener implements Listener {
 		
 		if (!Main.elgi.containsKey(event.getEntity().getEntityId())) {
 			
-			int val = plugin.getConfig().getInt(event.getEntityType().toString()+".chance");
+			int val = plugin.getConfig().getInt("eggs."+event.getEntityType().toString()+".chance");
 
 			if(val == 0) {
 				val = 200;
@@ -32,8 +32,8 @@ public class DeathListener implements Listener {
 			
 			String mob = event.getEntity().getType().toString();
 			
-			if(plugin.getConfig().getString(event.getEntityType().toString()+".eggtype") != "null") {
-				mob = plugin.getConfig().getString(event.getEntityType().toString()+".eggtype");
+			if(plugin.getConfig().getString("eggs."+event.getEntityType().toString()+".eggtype") != "null") {
+				mob = plugin.getConfig().getString("eggs."+event.getEntityType().toString()+".eggtype");
 			}
 			
 			if (Math.random()*chance<1) {
